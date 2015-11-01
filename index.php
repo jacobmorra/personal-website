@@ -34,26 +34,30 @@
         
         <div class="slide4">
             <div class="yellowbox">
-				<div class="innerYellowBox"
-					<form method="post" action="/php/send.php">
+				<div class="innerYellowBox">
+					<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
 					<table>
 						<tr>
 							<td>Your Name * </td>
-							<td> <input type="text" name = "name"/> </td>
+							<td> <input type="text" name = "name"> </td>
 						</tr>
 						<tr>
 							<td>Email Address * </td>
-							<td> <input type="text" name = "email"/></td>
+							<td> <input type="text" name = "email"></td>
 						</tr>
 						<tr>
 							<td>Leave a message </td>
-							<td><textarea name="comments" cols="25" rows="4"></textarea></td>
+							<td><textarea name="comment" cols="25" rows="4"></textarea></td>
 						</tr>
 						<tr>
-							<td><input type="submit"/></td>
+							<td><input type="submit" name="submit" value="Submit"></td>
+							<td> </td>
 						</tr>
 					</table>
 					</form>
+					<?php
+					include "send.php";
+					?>
 				</div>
             </div>
         </div>
