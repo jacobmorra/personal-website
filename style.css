@@ -8,23 +8,23 @@
 }
 .title{
     font-size: 50 !important;
-    font-family: 'Pacifico', serif;
+    font-family: 'Roboto Slab', serif;
 }
 .slider {
   position: relative;
   width: 100%;
-  height: 430px;
+  height: 460px;
   border-bottom: 1px solid #ddd;
 }
 .active-slide{
     display: block !important;
 }
 .message{
-	font-family: 'Oswald', serif;
+	font-family: 'Droid Sans', serif;
 	font-size: 16px;
 }
 .message1{
-	font-family: 'Oswald', serif;
+	font-family: 'Droid Sans', serif;
 	font-size: 24px;
 	text-align: center;
 }
@@ -39,34 +39,35 @@
     height: 100%;
 }
 .redbox, .bluebox, .greenbox, .yellowbox{
-    height: 400px;
+    height: 430px;
     margin: auto;
 }
 .redbox{
     background-color: red;
 }
 .bluebox{
-    background-color: blue;
+    background-color: black;
+	overflow:auto;
 }
 .greenbox{
     background-color: green;
 }
 .yellowbox{
-    background-color: yellow;
+    background-color: black;
 }
 .innerBoxab, .innerBoxbc{
-	font-family: 'Oswald', serif;
+	font-family: 'Droid Sans', serif;
 	font-size: 20px;
-    border: 1px solid #00FF99;
+    border: 1px solid black;
     border-radius: 10px;
-    background: #B0E0E6;
+    background: black;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 5%;
 	position: relative;
 	top:5%;
 	width: 40%;
-	height: 90%;
+	height: 95%;
 	margin: auto;
 	border-radius: 1%;
 }
@@ -74,9 +75,13 @@
 	font-size: 20px !important;
 }
 .innerBoxaba{
+	border-radius: 10px;
+	padding: 5px;
 	width: 95%;
-	height: 98%;
+	height: auto;
 	margin: auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
 
 }
 .innerBox{
